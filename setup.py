@@ -7,5 +7,5 @@ setup(
     author_email='LibertyMRodriguez@gmail.com',
     description='A simple calculator package',
     packages=['calculator_package'],
-    install_requires=[],
+    install_requires=[]
 )
