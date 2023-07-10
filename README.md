@@ -1,3 +1,5 @@
+# lrodri-DWWP.1
+
 # Calculator Package
 Welcome to the Calculator package! This package provides a Calculator class that allows you to perform basic mathematical operations and manipulate a memory value.
 
@@ -7,48 +9,54 @@ You can install the Calculator package using pip. Open your terminal or command 
 
 Usage
 To use the Calculator package, follow the example below:
-from calculator_package import Calculator
+from calculator_package.calculator import Calculator
 
 ## Create an instance of the Calculator
 calculator = Calculator()
 
-## Perform addition
-result = calculator.add(5, 3)
-print(f"Addition result: {result}")
+## Addition
+To perform addition, use the add() method:
 
-## Perform subtraction
-result = calculator.subtract(10, 4)
-print(f"Subtraction result: {result}")
+calculator.add(5)
 
-## Perform multiplication
-result = calculator.multiply(6, 2)
-print(f"Multiplication result: {result}")
+## Subtraction
+To perform subtraction, use the subtract() method:
 
-## Perform division
-result = calculator.divide(20, 5)
-print(f"Division result: {result}")
+calculator.subtract(3)
 
-## Take the square root of a number
-result = calculator.root(16, 2)
-print(f"Square root result: {result}")
+## Multiplication
+To perform multiplication, use the multiply() method:
 
-## Reset the memory
+
+calculator.multiply(2)
+
+## Division
+To perform division, use the divide() method:
+
+
+calculator.divide(4)
+
+## Root Calculation
+To calculate the n-th root of the memory, use the root() method:
+
+calculator.root(2)
+
+## Reset
+To reset the memory, use the reset() method:
+
 calculator.reset()
-print("Memory reset")
 
-## Get the current memory value
-memory = calculator.get_memory()
-print(f"Memory value: {memory}")
-Documentation
-Calculator Class
-The Calculator class provides the following methods:
+### Examples
+Here are some examples demonstrating the usage of the Calculator Package:
 
-- add(x, y): Performs addition of two numbers x and y.
-- subtract(x, y): Performs subtraction of two numbers x and y.
-- multiply(x, y): Performs multiplication of two numbers x and y.
-- divide(x, y): Performs division of two numbers x and y.
-- root(x, n): Takes the nth root of a number x.
-- reset(): Resets the memory value to 0.
+calculator = Calculator()
+
+-calculator.add(5)  # Memory: 5
+-calculator.subtract(3)  # Memory: 2
+-calculator.multiply(2)  # Memory: 4
+-calculator.divide(4)  # Memory: 1.0
+-calculator.root(2)  # Memory: 1.0
+-calculator.reset()  # Memory has been reset: 0
 
 Please refer to the source code and docstrings in the calculator.py file for detailed information on the usage and parameters of each method.
 
