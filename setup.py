@@ -6,6 +6,7 @@ setup(
     author='Liberty Rodriguez',
     author_email='LibertyMRodriguez@gmail.com',
     description='A simple calculator package',
+    url='https://github.com/EllePancake/calculator_package',
     packages=['calculator_package'],
     install_requires=[]
 )
