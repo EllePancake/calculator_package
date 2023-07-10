@@ -3,7 +3,7 @@ Welcome to the Calculator package! This package provides a Calculator class that
 
 Installation
 You can install the Calculator package using pip. Open your terminal or command prompt and run the following command:
-pip install calculator-package
+pip install [calculator-package](https://github.com/EllePancake/calculator_package)
 
 Usage
 To use the Calculator package, follow the example below:
