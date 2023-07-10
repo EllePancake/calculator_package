@@ -43,13 +43,12 @@ Documentation
 Calculator Class
 The Calculator class provides the following methods:
 
-add(x, y): Performs addition of two numbers x and y.
-subtract(x, y): Performs subtraction of two numbers x and y.
-multiply(x, y): Performs multiplication of two numbers x and y.
-divide(x, y): Performs division of two numbers x and y.
-root(x, n): Takes the nth root of a number x.
-reset(): Resets the memory value to 0.
-get_memory(): Returns the current value stored in the memory.
+- add(x, y): Performs addition of two numbers x and y.
+- subtract(x, y): Performs subtraction of two numbers x and y.
+- multiply(x, y): Performs multiplication of two numbers x and y.
+- divide(x, y): Performs division of two numbers x and y.
+- root(x, n): Takes the nth root of a number x.
+- reset(): Resets the memory value to 0.
 
 Please refer to the source code and docstrings in the calculator.py file for detailed information on the usage and parameters of each method.
 
