@@ -1,4 +1,4 @@
-# lrodri-DWWP.1
+
 
 # Calculator Package
 Welcome to the Calculator package! This package provides a Calculator class that allows you to perform basic mathematical operations and manipulate a memory value.
@@ -11,54 +11,70 @@ You can install the Calculator package using pip. Open your terminal or command 
 
 Usage
 To use the Calculator package, follow the example below:
-from calculator_package.calculator import Calculator
+```from calculator_package.calculator import Calculator```
 
 ## Create an instance of the Calculator
-```calculator = Calculator()```
+```
+calculator = Calculator()
+```
 
 ## Addition
 To perform addition, use the add() method:
 
+```
 calculator.add(5)
+```
 
 ## Subtraction
 To perform subtraction, use the subtract() method:
 
+```
 calculator.subtract(3)
+```
 
 ## Multiplication
 To perform multiplication, use the multiply() method:
 
 
+```
 calculator.multiply(2)
+```
 
 ## Division
 To perform division, use the divide() method:
 
 
+```
 calculator.divide(4)
+```
 
 ## Root Calculation
 To calculate the n-th root of the memory, use the root() method:
 
+```
 calculator.root(2)
+```
 
 ## Reset
 To reset the memory, use the reset() method:
 
+```
 calculator.reset()
+```
 
 ### Examples
 Here are some examples demonstrating the usage of the Calculator Package:
 
+```
 calculator = Calculator()
 
--calculator.add(5)  # Memory: 5
--calculator.subtract(3)  # Memory: 2
--calculator.multiply(2)  # Memory: 4
--calculator.divide(4)  # Memory: 1.0
--calculator.root(2)  # Memory: 1.0
--calculator.reset()  # Memory has been reset: 0
+- calculator.add(5)  # Memory: 5
+- calculator.subtract(3)  # Memory: 2
+- calculator.multiply(2)  # Memory: 4
+- calculator.divide(4)  # Memory: 1.0
+- calculator.root(2)  # Memory: 1.0
+- calculator.reset()  # Memory has been reset: 0
+```
 
 Please refer to the source code and docstrings in the calculator.py file for detailed information on the usage and parameters of each method.
 
