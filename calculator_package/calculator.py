@@ -16,7 +16,7 @@ class Calculator:
             ValueError: If the value is not a valid number.
         """
         self.memory += value
-        print("Memory:", self.memory)
+        print("Memory:", round(self.memory, 6))
 
     def subtract(self, value: float) -> None:
         """
@@ -29,7 +29,7 @@ class Calculator:
             ValueError: If the value is not a valid number.
         """
         self.memory -= value
-        print("Memory:", self.memory)
+        print("Memory:", round(self.memory, 6))
 
     def multiply(self, value: float) -> None:
         """
@@ -42,7 +42,7 @@ class Calculator:
             ValueError: If the value is not a valid number.
         """
         self.memory *= value
-        print("Memory:", self.memory)
+        print("Memory:", round(self.memory, 6))
 
     def divide(self, value: float) -> None:
         """
@@ -55,7 +55,7 @@ class Calculator:
             ValueError: If the value is not a valid number.
         """
         self.memory /= value
-        print("Memory:", self.memory)
+        print("Memory:", round(self.memory, 6))
 
     def root(self, n: float) -> None:
          """
@@ -74,7 +74,7 @@ class Calculator:
             raise ValueError("Cannot take the root of a negative number.")
         
         self.memory **= 1/n
-        print("Memory:", self.memory)
+        print("Memory:", round(self.memory, 6))
 
     def reset(self) -> None:
          """
