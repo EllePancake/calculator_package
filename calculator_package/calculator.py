@@ -15,6 +15,7 @@ class Calculator:
         Raises:
             ValueError: If the value is not a valid number.
         """
+        self._validate_input(value)
         self.memory += value
         print("Memory:", round(self.memory, 6))
 
@@ -28,6 +29,7 @@ class Calculator:
         Raises:
             ValueError: If the value is not a valid number.
         """
+        self._validate_input(value)
         self.memory -= value
         print("Memory:", round(self.memory, 6))
 
@@ -41,6 +43,7 @@ class Calculator:
         Raises:
             ValueError: If the value is not a valid number.
         """
+        self._validate_input(value)
         self.memory *= value
         print("Memory:", round(self.memory, 6))
 
@@ -53,7 +56,11 @@ class Calculator:
 
         Raises:
             ValueError: If the value is not a valid number.
+            ZeroDivisionError: If the value is zero.
         """
+        self._validate_input(value)
+        if value == 0:
+            raise ZeroDivisionError("Cannot divide by zero.")
         self.memory /= value
         print("Memory:", round(self.memory, 6))
 
@@ -66,10 +73,9 @@ class Calculator:
 
         Raises:
             ValueError: If the memory is a negative number.
-            
-        Raises:
             ValueError: If the value is not a valid number.
         """
+        self._validate_input(n)
         if self.memory < 0:
             raise ValueError("Cannot take the root of a negative number.")
         
@@ -82,3 +88,16 @@ class Calculator:
         """
         self.memory = 0
         print("Memory has been reset:", self.memory)
+        
+    def _validate_input(self, value: float) -> None:
+        """
+        Validates if the input value is a valid number.
+
+        Args:
+            value (float): The value to be validated.
+
+        Raises:
+            ValueError: If the value is not a valid number.
+        """
+        if not isinstance(value, (int, float)):
+            raise ValueError("Invalid input. Please enter a valid number.")
